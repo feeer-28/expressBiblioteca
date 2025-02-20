@@ -1,9 +1,9 @@
 const express = require('express');
 const router=express.Router();
-const LibroController = require('../controller/libroController')
-router.get("/libro",LibroController.obtenerlibros);
-router.post("/libro",LibroController.insertarlibros);
-router.delete("/libro/:id",LibroController.eliminarlibros);
-router.put("/libro/:id",LibroController.actualizarlibros);
-router.get("/libro/:buscarN ",LibroController.buscarlibros);
+const LibroController = require('../controller/librosController')
+router.get("/libro",LibroController.obtenerLibros);
+router.post("/libro",LibroController.insertarLibros);
+router.delete("/libro/:id",LibroController.eliminarLibros);
+router.put("/libro/:id",LibroController.actualizarLibros);
+router.get("/libro/:buscarN ",LibroController.buscarLibros);
 module.exports=router;
